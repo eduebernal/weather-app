@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit',(e)=>{
             messageOne.textContent = data.error
         } else{
             messageOne.textContent = data.location
-            messageTwo.textContent = data.forecast.summary + ' It is currently ' + data.forecast.temperature + ' ºC out. There is a ' + data.forecast.precipitation*100 + '% chance of rain.'
+            messageTwo.textContent = data.forecast.summary + ' It is currently ' + data.forecast.temperature + ' ºC out. There is a ' + data.forecast.precipitation*100 + '% chance of rain. The high is ' + data.forecast.temperatureHigh + ' ºC and the low is ' + data.forecast.temperatureLow + ' ºC.'
         }
     })
 })
